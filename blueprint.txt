@@ -1,0 +1,17 @@
+title: Flatmates Bill
+
+description: an app that takes as input the amount of a bill for a particular period and the days that each
+flatmates stayed in the house for that period and returns how much each flatmates has to pay. It also generate
+a PDF report showing the name of the flatmates, the period, and how much of them had to pay.
+
+objects:
+    Bill:
+        amount
+        period
+    Flatmate
+        name
+        days_in_house
+        pays(bill)
+    PdfReport
+        filename
+        generate(flatmate_a, flatmate_b, bill)
